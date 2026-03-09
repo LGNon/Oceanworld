@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오션월드 | Ocean World</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/time.js"></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <a class="fixedTop" href="#">
+    <img src="./img/btn_top.png" alt="top">
+  </a>
+  <header>
+    <div class="search-wrap">
+      <div class="rel">
+        <h1 class="logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="starbucks">
+          </a>
+        </h1>
+        <a href="#" class="sch-c-btn">
+          닫기
+          <img src="./img/tclose.png" alt="sch-ico">
+        </a>
+      </div>
+      <div class="sch-input-wrap">
+        <form action="sch.jsp">
+          <label for="search" class="blind">검색하기</label>
+          <input type="text" id="search" placeholder="검색어를 입력하세요">
+          <input type="submit" value="검색하기" class="sch-go-btn">
+        </form>
+      </div>
+    </div>
+    <div class="h-dep1">
+      <div class="rel">
+        <ul class="sns-wrap">
+          <li>
+            <a href="#">
+              <img src="./img/book_btn.png" alt="book-ico">
+            </a>
+          </li>
+        </ul>
+        <h1 class="logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </h1>
+        <ul class="util-wrap">
+          <li>
+            <a href="#" class="sch-open-btn">
+              <img src="./img/util1.png" alt="util-ico">
+              <div class="txt">검색</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/util3.png" alt="util-ico">
+              <div class="txt">위치정보</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-m-menu">
+              <span>menu</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-dep2">
+      <div class="rel">
+        <ul class="main-nav">
+          <li><a href="#">운영상황</a></li>
+          <li><a href="#">이용안내</a></li>
+          <li><a href="#">요금&amp;할인</a></li>
+          <li><a href="#">가이드맵</a></li>
+          <li><a href="#">어트랙션</a></li>
+          <li><a href="#">오션월드 빌리지</a></li>
+          <li><a href="#">소개</a></li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-nav-wrap">
+      <div class="rel">
+        <ul class="sub-nav">
+          <li>
+            <span class="blind">운영상황</span>
+            <ul class="sub-list">
+              <li><a href="#">오늘의 운영상황</a></li>
+              <li><a href="#">어트렉션 운영상황</a></li>
+              <li><a href="#">기간 내 운영상황</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">이용안내</span>
+            <ul class="sub-list">
+              <li><a href="#">이용 가이드</a></li>
+              <li><a href="#">렌탈 이용안내</a></li>
+              <li><a href="#">수질관리 및 안전관련 주의 사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">요금&amp;할인</span>
+            <ul class="sub-list">
+              <li><a href="#">이용요금</a></li>
+              <li><a href="#">할인혜택</a></li>
+              <li><a href="#">렌탈 요금</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">가이드맵</span>
+            <ul class="sub-list">
+              <li><a href="#">오시는 길</a></li>
+              <li><a href="#">시설 지도</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">어트랙션</span>
+            <ul class="sub-list">
+              <li><a href="#">아쿠아존</a></li>
+              <li><a href="#">익스트림존</a></li>
+              <li><a href="#">다이나믹존</a></li>
+              <li><a href="#">메가슬라이드존</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">오션월드 빌리지</span>
+            <ul class="sub-list">
+              <li><a href="#">온라인예약</a></li>
+              <li><a href="#">오션월드/편의시설</a></li>
+              <li><a href="#">곤돌라 및 전용 주차장</a></li>
+              <li><a href="#">헤택</a></li>
+              <li><a href="#">이용안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">소개</span>
+            <ul class="sub-list">
+              <li><a href="#">오션월드</a></li>
+              <li><a href="#">오션어드벤쳐</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="blind">고객편의</span>
+            <ul class="sub-list">
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="sns-wrap">
+          <li>
+            <a href="#">
+              <img src="./img/book_btn.png" alt="book-ico">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <!-- height 47rem -->
+    <div class="rel">
+      <!-- .hero-slider -->
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide s01">
+            <div class="tit-wrap">
+              <h2>2026 상반기 운영안내</h2>
+            </div>
+          </div>
+          <div class="swiper-slide s02">
+            <div class="tit-wrap">
+              <h2>클린데이 안내</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="depth1">
+    <div class="rel">
+      <div class="news-wrap">
+        <h3>
+          <img src="./img/leftnews.png" alt="ico">
+          <span>새소식</span>
+        </h3>
+        <div class="news-slider-wrap">
+          <div class="swiper news-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  2026년 레저시설 상반기 휴장안내
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  제헌절 공휴일 지정에 따른 운영 안내
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  25년 겨울 성수기 추첨지역 잔여 객실 및 객실 예약 위약금 제도 수수료율 변경 안내
+                </a>
+              </div>
+            </div>
+            <div class="news-arr-wrap">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-wrap">
+        <a href="#" class="info-btn">
+          이용안내
+          <span>→</span>
+        </a>
+        <a href="#" class="info-btn dark">
+          이용현황
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="icon-button-container">
+    <a href="#" class="icon-button">
+      <div class="circle">
+        <img src="img/icon_calendar.png" alt="온라인예약" class="button_icon">
+        <span>온라인예약</span>
+      </div>
+    </a>
+  
+    <a href="#" class="icon-button">
+      <div class="circle">
+        <img src="img/icon_bus.png" alt="셔틀버스" class="button_icon">
+        <span>셔틀버스</span>
+      </div>
+    </a>
+  
+    <a href="#" class="icon-button">
+      <div class="circle">
+        <img src="img/icon_group.png" alt="단체문의" class="button_icon">
+        <span>단체문의</span>
+      </div>
+    </a>
+  </div>
+  <section class="time_wrap">
+    <div class="time_inner">
+      <h2 class="hide">오늘의 운영상황</h2>
+      <div class="time_txt">
+        <p class="title_time">오늘의 운영상황</p>
+        <p><span id="current-date">00월 00일(요일)<span></p>
+          <ul>
+            <li><span>실내존</span> 10:30 ~ 20:00</li>
+            <li><span>야외존</span> 미운영</li>
+          </ul>
+      </div><!-- time_txt -->
+    </div>
+  </section><!-- time_wrap -->
+  <section class="depth2">
+    <div class="rel">
+      <h2>어트렉션 운영상황</h2>
+      <ul class="tab">
+        <li><a href="#">아쿠아존</a></li>
+        <li><a href="#">익스트림존</a></li>
+        <li><a href="#">다이나믹존</a></li>
+        <li><a href="#">메가슬라이드존</a></li>
+      </ul>
+    </div>
+    <div class="dep2-slider-wrap">
+      <div class="swiper dep2-sl-1 ">
+        <div class="swiper-wrapper">
+
+        </div>
+      </div>
+      <div class="swiper dep2-sl-2">
+        <div class="swiper-wrapper">
+
+        </div>
+      </div>
+      <div class="swiper dep2-sl-3">
+        <div class="swiper-wrapper">
+
+        </div>
+      </div>
+      <div class="swiper dep2-sl-4">
+        <div class="swiper-wrapper">
+
+        </div>
+      </div>
+
+      <div class="dep2-arr-wrap">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <section class="depth3">
+    <div class="rel">
+      <div class="in-wrap culture-wrap">
+        <div class="tit-wrap">
+          <h3>New &amp; Hot</h3>
+          <a href="#" class="in-add-btn">
+            <img src="./img/plus.png" alt="">
+          </a>
+        </div>
+        <div class="in-slider-wrap">
+          <div class="swiper culture-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/culture-1.jpg" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>모바일 코인</span><br>
+                    ₩ 10,000 ~
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/culture-2.webp" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>[비발디파크] First Early Spring 패키지</span><br>
+                    ₩ 120,000 ~
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/culture-3.webp" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>[소노캄 비발디파크] Kids Adventure All Pass</span><br>
+                    ₩ 234,000 ~
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="in-wrap culture-wrap">
+        <div class="tit-wrap">
+          <h3>SONO PACKAGE</h3>
+          <a href="#" class="in-add-btn">
+            <img src="./img/plus.png" alt="">
+          </a>
+        </div>
+        <div class="in-slider-wrap">
+          <div class="swiper culture-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/sono-1.jpg" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>SONO Water-ful</span><br>
+                    ₩ 115,000 ~
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/sono-2.jpg" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>오션월드 빌리지 온라인예약</span><br>
+                    ₩ 630,000 ~
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/sono-3.jpg" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>[소노빌리지] 노블리안 회원 전용 | ROOM & POOL 패키지</span><br>
+                    ₩ 244,000 ~
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="in-wrap culture-wrap">
+        <div class="tit-wrap">
+          <h3>Event &amp; Benefit</h3>
+          <a href="#" class="in-add-btn">
+            <img src="./img/plus.png" alt="">
+          </a>
+        </div>
+        <div class="in-slider-wrap">
+          <div class="swiper event-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/event-1.webp" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>TO-PARK EVENT</span><br>
+                    2025.12.29 ~ 2026.03.02
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/event-2.webp" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>2026 Spring Season On Deal</span><br>
+                    2026.02.23 ~ 2026.03.16
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./img/event-3.webp" alt="img">
+                  </div>
+                  <div class="sl-txt">
+                    <span>2025 Winter Memories</span><br>
+                    2026.02.23 ~ 2026.03.04
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="depth5">
+    <div class="rel">
+      <div class="notice-media-wrap">
+        <h2>
+          <span class="on">공지사항</span>
+          <span>언론보도</span>
+        </h2>
+        <div class="content-wrap">
+          <ul class="notice-list Active">
+            <li>
+              <a href="#">
+                <span class="txt">사이렌 오더 서비스 구버전 지원 종료 안내</span>
+                <span class="date">2025-07-19</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="txt">시스템 개선 및 서비스 점검 안내</span>
+                <span class="date">2025-08-19</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="txt">계좌 결제 기능 일시 중단 안내</span>
+                <span class="date">2025-09-19</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="txt">홈페이지 이용약관 개정 안내</span>
+                <span class="date">2025-10-19</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="media-list">
+            <li>
+              <a href="#">
+                <span class="txt">스타벅스 홈페이지 ‘My 캘린더’ 서비스 종료 및 그에 따른 홈페이지 이용약관 개정 안내</span>
+                <span class="date">2025-10-19</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="txt">위치정보 이용약관 / 스타벅스 카드 이용약관 개정 안내</span>
+                <span class="date">2025-11-19</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="txt">홈페이지 이용약관(SSGPAY 결제 수단 추가) 변경 안내</span>
+                <span class="date">2025-12-19</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="txt">딜리버스 예약 서비스 중단 안내</span>
+                <span class="date">2025-12-19</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-wrap">
+        <div class="open-notice">
+          <a href="#">
+            <img src="./img/icon1.png" alt="icon">
+            <div class="t-wrap">
+              <h4>개장안내</h4>
+              <p class="txt">
+                개장에 관련된 일정을 확인하세요
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="open-notice qna">
+          <a href="#">
+            <img src="./img/icon2.png" alt="icon">
+            <div class="t-wrap">
+              <h4>자주하는 질문</h4>
+              <p class="txt">
+                많은 분들이 궁금해 하시는 질문 모음입니다.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer_wrap">
+  <div class="footer_inner">
+    
+    <nav class="footer_nav">
+      <ul>
+        <li><a href="#">고객지원</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제휴문의</a></li>
+        <li><a href="#" class="bold">개인정보처리방침</a></li>
+        <li><a href="#">영상정보처리기기운영방침</a></li>
+        <li><a href="#">쿠키정책</a></li>
+        <li><a href="#">이용약관</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer_info">
+      <div class="info_row">
+        <span>사업자등록번호 223-81-08341</span>
+        <span>통신판매업신고 2004-강원홍천-00008</span>
+        <a href="#" class="info_link">통신판매사업자 정보</a>
+        <span>대표이사 : 이광수, 이병천, 권광수</span>
+        <span>(주)소노인터내셔널</span>
+      </div>
+      <div class="info_row">
+        <span>주소 : 강원특별자치도 홍천군 서면 한치골길 262</span>
+        <span>이메일 : webmaster@daemyungsono.com</span>
+        <span>소노예약센터 : +82-1588-4888</span>
+        <span>운영시간 9:00~18:00(연중무휴)</span>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <ul class="sns_icons">
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3c5.8 0 10.501 3.664 10.501 8.185c0 4.52-4.701 8.184-10.5 8.184a14 14 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866c0-4.52 4.7-8.185 10.5-8.185m5.908 8.06l1.47-1.424a.472.472 0 0 0-.656-.678l-1.928 1.866V9.282a.472.472 0 0 0-.944 0v2.557a.5.5 0 0 0 0 .222V13.5a.472.472 0 0 0 .944 0v-1.363l.427-.413l1.428 2.033a.472.472 0 1 0 .773-.543zm-2.958 1.924h-1.46V9.297a.472.472 0 0 0-.943 0v4.159c0 .26.21.472.471.472h1.932a.472.472 0 1 0 0-.944m-5.857-1.091l.696-1.708l.638 1.707zm2.523.487l.002-.016a.47.47 0 0 0-.127-.32l-1.046-2.8a.69.69 0 0 0-.627-.474a.7.7 0 0 0-.653.447l-1.662 4.075a.472.472 0 0 0 .874.357l.332-.813h2.07l.298.8a.472.472 0 1 0 .884-.33zM8.294 9.302a.47.47 0 0 0-.471-.472H4.578a.472.472 0 1 0 0 .944h1.16v3.736a.472.472 0 0 0 .944 0V9.774h1.14a.47.47 0 0 0 .472-.472"/></svg></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/></svg></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-width="2" d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"/><circle cx="16.5" cy="7.5" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></g></svg></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a></li>
+      </ul>
+      <p class="copyright">COPYRIGHT &copy; SONO HOTELS &amp; RESORTS ALL Right Reserved.</p>
+    </div>
+
+  </div>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script type="module" src="./js/tab.js"></script>
+</body>
+</html>
