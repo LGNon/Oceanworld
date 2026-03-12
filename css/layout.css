@@ -784,6 +784,7 @@ header.schOpen .search-wrap {
 /* footer */
 /* 푸터 전체 배경 및 폰트 설정 */
 .footer_wrap {
+    margin-top: 30px;
   background-color: #e2e2e2; /* 이미지의 연한 회색 배경 */
   padding: 40px 0;
   font-family: 'Pretendard', sans-serif;
@@ -801,10 +802,11 @@ header.schOpen .search-wrap {
 .footer_nav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* [중요] 화면이 좁아지면 자동으로 다음 줄로 넘어가게 설정 */
   list-style: none;
   padding: 0;
   margin-bottom: 30px;
-  gap: 25px;
+  gap: 15px 25px; /* 세로 간격(15px)과 가로 간격(25px) 분리 */
 }
 
 .footer_nav a {
@@ -824,13 +826,16 @@ header.schOpen .search-wrap {
   line-height: 1.8;
   color: #666;
   margin-bottom: 30px;
+  display: flex; /* 세로 정렬을 쉽게 하기 위해 flex 추가 */
+  flex-direction: column;
+  gap: 10px;
 }
 
 .info_row {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-wrap: wrap; /* 정보가 많을 때 잘리지 않도록 설정 */
+  gap: 10px 15px;
 }
 
 .info_link {
@@ -853,14 +858,14 @@ header.schOpen .search-wrap {
   gap: 15px;
 }
 
-.sns_icons img {
+.sns_icons svg {
   width: 32px; /* 아이콘 크기 */
   height: auto;
   filter: grayscale(100%); /* 아이콘을 회색조로 (필요시 제거) */
   opacity: 0.6;
 }
 
-.sns_icons a:hover img {
+.sns_icons a:hover svg {
   opacity: 1;
 }
 
@@ -869,4 +874,23 @@ header.schOpen .search-wrap {
   color: #555;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .footer_nav ul {
+    gap: 10px 15px; /* 모바일에서 메뉴 간격 축소 */
+  }
+  
+  .footer_nav a {
+    font-size: 14px; /* 글자 크기 살짝 조절 */
+  }
+
+  .info_row {
+    flex-direction: column; /* 모바일에서는 정보를 한 줄씩 세로로 나열 */
+    gap: 5px;
+  }
+  
+  .info_row span::after {
+    display: none; /* 가로로 나열할 때 쓰던 구분선 등이 있다면 제거 */
+  }
 }
